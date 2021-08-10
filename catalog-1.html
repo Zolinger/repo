@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE BRAND</title>
+    <title>Catalog</title>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,11 +17,8 @@
                 <a class="logo" href="main.html"><img src="images/main_logo.svg" alt="Main"></a>
             </div>
             <div class="searching">
-                <a href="#"><img src="images/search.svg" alt="Search"></a>
-                <div class="pole">
-                    <input class="search-text" type="search" placeholder="Enter your searching...">
-                    <input value="Search" type="submit">
-                </div>
+                <img class="lupa" src="images/search.svg" alt="Search">
+                <form class="pole" action="#"><input type="search" name="q" placeholder="Поиск по сайту"></form>
             </div>
         </div>
         <nav class="right">
@@ -53,40 +50,69 @@
             <a class="tap_3" href="#"><img src="images/card.svg" alt="Card"></a>
         </nav>
     </div>
-    <div class="title">
-        <div class="title_left">
-            <img class="title_men" src="images/title_men.png" alt="brand">
+    <div class="title-catalog">
+        <div class="head-catalog">
+            <h3>NEW ARRIVALS</h3>
         </div>
-        <div class="title_right">
-            <div class="stripe"></div>
-            <div class="stripe-text">
-                <p class="big">THE BRAND</p>
-                <p class="not_big">OF LUXERIOUS <span class="pink">FASHION</span></p>
-            </div>
-        </div>
-    </div>
-    <div class="container main-block">
-        <div class="block">
-            <div class="for_women"><img src="images/for_women.jpg" alt="for women">
-                <p class="text_block">30% OFF<br><span class="pink">FOR WOMEN</span></p>
-            </div>
-            <div class="men"><img src="images/for_men.jpg" alt="for men">
-                <p class="text_block">HOT DEAL<br><span class="pink">FOR MEN</span></p>
-            </div>
-            <div class="kids"><img src="images/for_kids.jpg" alt="for kids">
-                <p class="text_block">NEW ARRIVALS<br><span class="pink">FOR KIDS</span></p>
-            </div>
-        </div>
-        <div class="acces"><img src="images/accesories.jpg" alt="accesories">
-            <p class="text_acces">LUXIROUS & TRENDY<br><span class="pink">ACCESORIES</span></p>
-        </div>
-    </div>
-    <article class="items">
         <div>
-            <h3 class="name_items">Fetured Items</h3>
-            <p class="par">Shop for items based on what we featured in this week</p>
+            <nav>
+                <ul class="breadcrumb">
+                    <li><a href="main.html">HOME</a></li>
+                    <li class="this-page">NEW ARRIVALS</li>
+                </ul>
+            </nav>
         </div>
-    </article>
+    </div>
+    <div class="container menu-catalog">
+        <div class="left-menu">
+            <div>
+                <details class="menu-filter">
+                    <summary class="filter-content">FILTER</summary>
+                    <input type="checkbox">
+                    <p>Aa</p>
+                    <input type="checkbox">
+                    <p>Ss</p>
+                </details>
+            </div>
+        </div>
+        <div class="right-menu">
+            <div>
+                <details class="menu-filter">
+                    <summary>TRENDING NOW</summary>
+                    <input type="checkbox">
+                    <p>New</p>
+                    <input type="checkbox">
+                    <p>Old</p>
+                </details>
+            </div>
+            <div>
+                <details class="menu-filter">
+                    <summary>SIZE</summary>
+                    <input type="checkbox">
+                    <p>XS</p>
+                    <input type="checkbox">
+                    <p>S</p>
+                    <input type="checkbox">
+                    <p>M</p>
+                    <input type="checkbox">
+                    <p>L</p>
+                    <input type="checkbox">
+                    <p>XL</p>
+                    <input type="checkbox">
+                    <p>XXL</p>
+                </details>
+            </div>
+            <div>
+                <details class="menu-filter">
+                    <summary>PRICE</summary>
+                    <input type="checkbox">
+                    <p>Sort ascending</p>
+                    <input type="checkbox">
+                    <p>Sort descending</p>
+                </details>
+            </div>
+        </div>
+    </div>
     <div class="container product">
         <div class="item-box">
             <div class="item">
@@ -192,33 +218,15 @@
                 </div>
             </div>
         </div>
-        <a href="catalog-1.html" class="button">Browse All Product</a>
-    </div>
-    <div class="spec">
-        <div class="spec_item1">
-            <img class="miniature" src="images/free_delivery.svg" alt="free_delivery">
-            <section>
-                <h4 class="spec_head">Free Delivery</h4>
-                <p class="spec_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
-                    extensive models.</p>
-            </section>
-        </div>
-        <div class="spec_item2">
-            <img class="miniature" src="images/sales.png" alt="sales">
-            <section>
-                <h4 class="spec_head">Sales & discounts</h4>
-                <p class="spec_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
-                    extensive models.</p>
-            </section>
-        </div>
-        <div class="spec_item3">
-            <img class="miniature" src="images/quality_assure.png" alt="quality_assure">
-            <section>
-                <h4 class="spec_head">Quality assurance</h4>
-                <p class="spec_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
-                    extensive models.</p>
-            </section>
-        </div>
+        <nav class="pag">
+            <div class="pagination">
+                <a href="catalog-3.html">&laquo;</a>
+                <a class="active" href="#">1</a>
+                <a href="catalog-2.html">2</a>
+                <a href="catalog-3.html">3</a>
+                <a href="catalog-2.html">&raquo;</a>
+            </div>
+        </nav>
     </div>
     <div class="footer">
         <div class="feedback">
@@ -252,6 +260,8 @@
             <div class="twit"><a href="https://www.twitter.com"><img src="images/twit.png" alt="Twitter"></a></div>
         </div>
     </div>
+
+
 
 
 </body>
