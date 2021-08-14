@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog</title>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/5b73396461.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -47,7 +48,7 @@
                 </div>
             </div>
             <a class="tap_2" href="#"><img src="images/registration.svg" alt="Registration"></a>
-            <a class="tap_3" href="#"><img src="images/card.svg" alt="Card"></a>
+            <a class="tap_3" href="cart.html"><img src="images/card.svg" alt="Card"></a>
         </nav>
     </div>
     <div class="title-catalog">
@@ -63,45 +64,87 @@
             </nav>
         </div>
     </div>
-    <div class=" container menu-catalog">
+    <div class="container menu-catalog">
         <div class="left-menu">
-            <div>
-                <details class="menu-filter">
-                    <summary>FILTER</summary>
-                </details>
+            <div class="filter-item">
+                <h4 class="left-nead">FILTER</h4><img class="fil" src="images/filter-black.svg" alt="">
             </div>
-        </div>
-        <div class="right-menu">
-            <div>
-                <details class="menu-filter">
-                    <summary>TRENDING NOW</summary>
-                </details>
+            <div class="cat-drop">
+                <div class="filter-item">
+                    <h4 class="left-nead">FILTER</h4><img class="fil" src="images/filter-pink.png" alt="">
+                </div>
+                <div id="accordion" class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-item-header">CATEGORY</div>
+                        <div class="accordion-item-content">
+                            <a class="cat-menu-way" href="#">Accessories</a><br>
+                            <a class="cat-menu-way" href="#">Bags</a><br>
+                            <a class="cat-menu-way" href="#">Denim</a><br>
+                            <a class="cat-menu-way" href="#">Hoodies & Sweatshirts</a><br>
+                            <a class="cat-menu-way" href="#">Jackets & Coats</a><br>
+                            <a class="cat-menu-way" href="#">Polos</a><br>
+                            <a class="cat-menu-way" href="#">Shirts</a><br>
+                            <a class="cat-menu-way" href="#">Shoes</a><br>
+                            <a class="cat-menu-way" href="#">Sweaters & Knits</a><br>
+                            <a class="cat-menu-way" href="#">T-Shirts</a><br>
+                            <a class="cat-menu-way" href="#">Tanks</a><br>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-item-header">BRAND</div>
+                        <div class="accordion-item-content">
+                            <a class="cat-menu-way" href="#">Gloria Jeans</a><br>
+                            <a class="cat-menu-way" href="#">H&M</a><br>
+                            <a class="cat-menu-way" href="#">Zara</a><br>
+                            <a class="cat-menu-way" href="#">Stradivarius</a><br>
+                            <a class="cat-menu-way" href="#">Reserved</a><br>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-item-header">DESIGNER</div>
+                        <div class="accordion-item-content">
+                            <a class="cat-menu-way" href="#">Old designers</a><br>
+                            <a class="cat-menu-way" href="#">Young designers</a><br>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <details class="menu-filter">
-                    <summary>SIZE</summary>
-                    <input type="checkbox">
-                    <p>XS</p>
-                    <input type="checkbox">
-                    <p>S</p>
-                    <input type="checkbox">
-                    <p>M</p>
-                    <input type="checkbox">
-                    <p>L</p>
-                    <input type="checkbox">
-                    <p>XL</p>
-                    <input type="checkbox">
-                    <p>XXL</p>
-                </details>
-            </div>
-            <div>
-                <details class="menu-filter">
-                    <summary>PRICE</summary>
-                    <input type="checkbox">
-                    <p>Sort ascending</p>
-                    <input type="checkbox">
-                    <p>Sort descending</p>
-                </details>
+            <div class="right-menu">
+                <div>
+                    <details class="menu-filter">
+                        <summary>TRENDING NOW</summary>
+                        <input type="checkbox">
+                        <p>New</p>
+                        <input type="checkbox">
+                        <p>Old</p>
+                    </details>
+                </div>
+                <div>
+                    <details class="menu-filter">
+                        <summary>SIZE</summary>
+                        <input type="checkbox">
+                        <p>XS</p>
+                        <input type="checkbox">
+                        <p>S</p>
+                        <input type="checkbox">
+                        <p>M</p>
+                        <input type="checkbox">
+                        <p>L</p>
+                        <input type="checkbox">
+                        <p>XL</p>
+                        <input type="checkbox">
+                        <p>XXL</p>
+                    </details>
+                </div>
+                <div>
+                    <details class="menu-filter">
+                        <summary>PRICE</summary>
+                        <input type="checkbox">
+                        <p>Sort ascending</p>
+                        <input type="checkbox">
+                        <p>Sort descending</p>
+                    </details>
+                </div>
             </div>
         </div>
     </div>
@@ -243,13 +286,10 @@
             <p>&copy;2021 Brand All Rights Reserved.</p>
         </div>
         <div class="network">
-            <div class="facebook"><a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
-            </div>
-            <div class="inst"><a href="https://www.instagram.com"><img src="images/inst.png" alt="Instagram"></a>
-            </div>
-            <div class="pin"><a href="https://www.pinterest.com"><img src="images/pint.png" alt="Pinterest"></a>
-            </div>
-            <div class="twit"><a href="https://www.twitter.com"><img src="images/twit.png" alt="Twitter"></a></div>
+            <div><i class="fa fa-facebook" aria-hidden="true"></i></div>
+            <div><i class="fa fa-instagram" aria-hidden="true"></i></div>
+            <div><i class="fa fa-pinterest-p" aria-hidden="true"></i></div>
+            <div><i class="fa fa-twitter" aria-hidden="true"></i></div>
         </div>
     </div>
 
