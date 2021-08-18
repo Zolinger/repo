@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
+    <title>Registration</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap"
@@ -53,81 +53,64 @@
                     <a class="menu-way" href="#">Bags</a>
                 </div>
             </div>
-            <a class="tap_2" href="registration.html"><img src="images/registration.svg" alt="Registration"></a>
-            <a class="tap_3" href="#"><img src="images/card.svg" alt="Card"></a>
+            <a class="tap_2" href="#"><img src="images/registration.svg" alt="Registration"></a>
+            <a class="tap_3" href="cart.html"><img src="images/card.svg" alt="Card"></a>
         </nav>
     </div>
     <div class="title-catalog">
         <div class="head-catalog">
-            <h3>SHOPPING CART</h3>
+            <h3>REGISTRATION</h3>
         </div>
         <div>
             <nav>
                 <ul class="breadcrumb">
                     <li><a href="main.html">HOME</a></li>
-                    <li><a href="catalog-1.html">NEW ARRIVALS</a></li>
-                    <li class="this-page">SHOPPING CART</li>
+                    <li class="this-page">REGISTRATION</li>
                 </ul>
             </nav>
         </div>
     </div>
-    <div class="container family">
-        <div class="dad">
-            <div class="cart-item1">
-                <a href="product-men-1.html"><img class="cart-photo" src="images/men-3.png" alt="photo"></a>
-                <div>
-                    <h2 class="cart-head">MANGO PEOPLE <br> T-SHIRT</h2>
-                    <div>
-                        <p class="cart-text">Price: <span class="cart-price">$300</span> </p>
-                        <p class="cart-text">Color: Red</p>
-                        <p class="cart-text">Size: Xl </p>
-                        <div class="quan">
-                            <p class="cart-text">Quantity:</p> <input class="howmuch" type="number" min="1" max="100"
-                                placeholder="1">
-                        </div>
+    <div class="container union">
+        <form action="#">
+            <div class="in">
+                <h4 class="in-head">Your Name</h4>
+                <input class="vvod" type="name" placeholder="First Name">
+                <input class="vvod" type="name" placeholder="Last Name">
+                <div class="in-check">
+                    <div class="inp-sex">
+                        <input type="radio" name="sex" id="male">
+                        <p class="sex">Male</p>
+                    </div>
+                    <div class="inp-sex">
+                        <input type="radio" name="sex" id="female">
+                        <p class="sex">Female</p>
                     </div>
                 </div>
-            </div>
-            <div class="cart-item2">
-                <a href="product-men-1.html"><img class="cart-photo" src="images/men-2.png" alt="photo"></a>
+                <h4 class="in-head">Login details</h4>
+                <input class="vvod" type="email" name="Email" id="" placeholder="Email">
+                <input class="vvod" type="password" name="password" id="" placeholder="Password">
+                <p class="in-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase
+                    and
+                    lowercase letters
+                </p>
                 <div>
-                    <h2 class="cart-head">MANGO PEOPLE <br> T-SHIRT</h2>
-                    <div>
-                        <p class="cart-text">Price: <span class="cart-price">$300</span> </p>
-                        <p class="cart-text">Color: Red</p>
-                        <p class="cart-text">Size: Xl </p>
-                        <div class="quan">
-                            <p class="cart-text">Quantity:</p> <input class="howmuch" type="number" min="1" max="100"
-                                placeholder="1">
-                        </div>
-                    </div>
+                    <button class="in-button" type="submit">JOIN NOW</button>
                 </div>
+
             </div>
-            <div class="cart-button">
-                <a href="#" class="but">CLEAR SHOPPING CART</a>
-                <a href="#" class="but">CONTINUE SHOPPING</a>
-            </div>
-        </div>
-        <div class="mom">
-            <form action="#">
-                <div>
-                    <h4 class="mom-head">SHIPPING ADRESS</h4>
-                    <input class="pole-vvoda" type="text" name="myInput" placeholder="Bangladesh" size="30" spellcheck
-                        required>
-                    <input class="pole-vvoda" type="text" name="myInput" placeholder="State" size="30" spellcheck
-                        required>
-                    <input class="pole-vvoda" type="text" name="myInput" placeholder="Postcode / Zip" size="30"
-                        spellcheck required>
-                </div>
-                <div>
-                    <button class="but but-submit" type="submit">GET A QUOTE</button>
-                </div>
-                <div class="buy">
-                    <p class="mom_text1">SUB TOTAL $900</p>
-                    <p class="mom_text2">GRAND TOTAL <span class="cart-price">$900</span></p>
-                    <a href="#" class="mom_button">PROCEED TO CHECKOUT</a>
-                </div>
-            </form>
+        </form>
+        <div class="yan">
+            <h3 class="yan-head">LOYALTY HAS ITS PERKS</h3>
+            <p class="yan-text">Get in on the loyalty program where you can earn points and unlock serious perks.
+                Starting with these as
+                soon as you join:</p>
+            <ul class="yan-ul">
+                <li class="yan-text">15% off welcome offer</li>
+                <li class="yan-text">Free shipping, returns and exchanges on all orders</li>
+                <li class="yan-text">$10 off a purchase on your birthday</li>
+                <li class="yan-text">Early access to products</li>
+                <li class="yan-text">Exclusive offers & rewards</li>
+            </ul>
         </div>
     </div>
     <div class="footer">

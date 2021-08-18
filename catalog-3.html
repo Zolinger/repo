@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog</title>
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/5b73396461.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,8 +21,11 @@
                 <a class="logo" href="main.html"><img src="images/main_logo.svg" alt="Main"></a>
             </div>
             <div class="searching">
-                <img class="lupa" src="images/search.svg" alt="Search">
-                <form class="pole" action="#"><input type="search" name="q" placeholder="Поиск по сайту"></form>
+                <a href="#"><img src="images/search.svg" alt="Search"></a>
+                <div class="pole">
+                    <input class="search-text" type="search" placeholder="Enter your searching...">
+                    <input value="Search" type="submit">
+                </div>
             </div>
         </div>
         <nav class="right">
@@ -47,7 +53,7 @@
                     <a class="menu-way" href="#">Bags</a>
                 </div>
             </div>
-            <a class="tap_2" href="#"><img src="images/registration.svg" alt="Registration"></a>
+            <a class="tap_2" href="registration.html"><img src="images/registration.svg" alt="Registration"></a>
             <a class="tap_3" href="cart.html"><img src="images/card.svg" alt="Card"></a>
         </nav>
     </div>
@@ -66,92 +72,79 @@
     </div>
     <div class="container menu-catalog">
         <div class="left-menu">
-            <div class="filter-item">
-                <h4 class="left-nead">FILTER</h4><img class="fil" src="images/filter-black.svg" alt="">
+            <details class="left-menu-filter">
+                <summary class="filter-cat">FILTER</summary>
+                <details>
+                    <summary class="head-filter">CATEGORY</summary>
+                    <a class="cat-menu-way" href="#">Accessories</a><br>
+                    <a class="cat-menu-way" href="#">Bags</a><br>
+                    <a class="cat-menu-way" href="#">Denim</a><br>
+                    <a class="cat-menu-way" href="#">Hoodies & Sweatshirts</a><br>
+                    <a class="cat-menu-way" href="#">Jackets & Coats</a><br>
+                    <a class="cat-menu-way" href="#">Polos</a><br>
+                    <a class="cat-menu-way" href="#">Shirts</a><br>
+                    <a class="cat-menu-way" href="#">Shoes</a><br>
+                    <a class="cat-menu-way" href="#">Sweaters & Knits</a><br>
+                    <a class="cat-menu-way" href="#">T-Shirts</a><br>
+                    <a class="cat-menu-way" href="#">Tanks</a><br>
+                </details>
+                <details>
+                    <summary class="head-filter">BRAND</summary>
+                    <a class="cat-menu-way" href="#">Gloria Jeans</a><br>
+                    <a class="cat-menu-way" href="#">H&M</a><br>
+                    <a class="cat-menu-way" href="#">Zara</a><br>
+                    <a class="cat-menu-way" href="#">Stradivarius</a><br>
+                    <a class="cat-menu-way" href="#">Reserved</a><br>
+                </details>
+                <details>
+                    <summary class="head-filter">DESIGNER</summary>
+                    <a class="cat-menu-way" href="#">Old designers</a><br>
+                    <a class="cat-menu-way" href="#">Young designers</a><br>
+                </details>
+            </details>
+        </div>
+        <div class="right-menu">
+            <div>
+                <details class="menu-filter">
+                    <summary>TRENDING NOW</summary>
+                    <input type="checkbox">
+                    <p>New</p>
+                    <input type="checkbox">
+                    <p>Old</p>
+                </details>
             </div>
-            <div class="cat-drop">
-                <div class="filter-item">
-                    <h4 class="left-nead">FILTER</h4><img class="fil" src="images/filter-pink.png" alt="">
-                </div>
-                <div id="accordion" class="accordion">
-                    <div class="accordion-item">
-                        <div class="accordion-item-header">CATEGORY</div>
-                        <div class="accordion-item-content">
-                            <a class="cat-menu-way" href="#">Accessories</a><br>
-                            <a class="cat-menu-way" href="#">Bags</a><br>
-                            <a class="cat-menu-way" href="#">Denim</a><br>
-                            <a class="cat-menu-way" href="#">Hoodies & Sweatshirts</a><br>
-                            <a class="cat-menu-way" href="#">Jackets & Coats</a><br>
-                            <a class="cat-menu-way" href="#">Polos</a><br>
-                            <a class="cat-menu-way" href="#">Shirts</a><br>
-                            <a class="cat-menu-way" href="#">Shoes</a><br>
-                            <a class="cat-menu-way" href="#">Sweaters & Knits</a><br>
-                            <a class="cat-menu-way" href="#">T-Shirts</a><br>
-                            <a class="cat-menu-way" href="#">Tanks</a><br>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-item-header">BRAND</div>
-                        <div class="accordion-item-content">
-                            <a class="cat-menu-way" href="#">Gloria Jeans</a><br>
-                            <a class="cat-menu-way" href="#">H&M</a><br>
-                            <a class="cat-menu-way" href="#">Zara</a><br>
-                            <a class="cat-menu-way" href="#">Stradivarius</a><br>
-                            <a class="cat-menu-way" href="#">Reserved</a><br>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-item-header">DESIGNER</div>
-                        <div class="accordion-item-content">
-                            <a class="cat-menu-way" href="#">Old designers</a><br>
-                            <a class="cat-menu-way" href="#">Young designers</a><br>
-                        </div>
-                    </div>
-                </div>
+            <div>
+                <details class="menu-filter">
+                    <summary>SIZE</summary>
+                    <input type="checkbox">
+                    <p>XS</p>
+                    <input type="checkbox">
+                    <p>S</p>
+                    <input type="checkbox">
+                    <p>M</p>
+                    <input type="checkbox">
+                    <p>L</p>
+                    <input type="checkbox">
+                    <p>XL</p>
+                    <input type="checkbox">
+                    <p>XXL</p>
+                </details>
             </div>
-            <div class="right-menu">
-                <div>
-                    <details class="menu-filter">
-                        <summary>TRENDING NOW</summary>
-                        <input type="checkbox">
-                        <p>New</p>
-                        <input type="checkbox">
-                        <p>Old</p>
-                    </details>
-                </div>
-                <div>
-                    <details class="menu-filter">
-                        <summary>SIZE</summary>
-                        <input type="checkbox">
-                        <p>XS</p>
-                        <input type="checkbox">
-                        <p>S</p>
-                        <input type="checkbox">
-                        <p>M</p>
-                        <input type="checkbox">
-                        <p>L</p>
-                        <input type="checkbox">
-                        <p>XL</p>
-                        <input type="checkbox">
-                        <p>XXL</p>
-                    </details>
-                </div>
-                <div>
-                    <details class="menu-filter">
-                        <summary>PRICE</summary>
-                        <input type="checkbox">
-                        <p>Sort ascending</p>
-                        <input type="checkbox">
-                        <p>Sort descending</p>
-                    </details>
-                </div>
+            <div>
+                <details class="menu-filter">
+                    <summary>PRICE</summary>
+                    <input type="checkbox">
+                    <p>Sort ascending</p>
+                    <input type="checkbox">
+                    <p>Sort descending</p>
+                </details>
             </div>
         </div>
     </div>
     <div class="container product">
         <div class="item-box">
             <div class="item">
-                <a class="item-link" href="#">
+                <a class="item-link" href="product-women-1.html">
                     <img class="item-img" src="images/women-1.png" alt="product">
                     <div class="text-box">
                         <h3 class="item-desc">ELLERY X M'O CAPSULE</h3>
@@ -168,7 +161,7 @@
                 </div>
             </div>
             <div class="item">
-                <a class="item-link" href="#">
+                <a class="item-link" href="product-men-1.html">
                     <img class="item-img" src="images/men-5.png" alt="product">
                     <div class="text-box">
                         <h3 class="item-desc">ELLERY X M'O CAPSULE</h3>
@@ -185,7 +178,7 @@
                 </div>
             </div>
             <div class="item">
-                <a class="item-link" href="#">
+                <a class="item-link" href="product-women-1.html">
                     <img class="item-img" src="images/women-2.png" alt="product">
                     <div class="text-box">
                         <h3 class="item-desc">ELLERY X M'O CAPSULE</h3>
@@ -202,7 +195,7 @@
                 </div>
             </div>
             <div class="item">
-                <a class="item-link" href="#">
+                <a class="item-link" href="product-men-1.html">
                     <img class="item-img" src="images/men-6.png" alt="product">
                     <div class="text-box">
                         <h3 class="item-desc">ELLERY X M'O CAPSULE</h3>
@@ -219,7 +212,7 @@
                 </div>
             </div>
             <div class="item">
-                <a class="item-link" href="#">
+                <a class="item-link" href="product-women-1.html">
                     <img class="item-img" src="images/women-3.png" alt="product">
                     <div class="text-box">
                         <h3 class="item-desc">ELLERY X M'O CAPSULE</h3>
@@ -236,7 +229,7 @@
                 </div>
             </div>
             <div class="item">
-                <a class="item-link" href="#">
+                <a class="item-link" href="product-men-1.html">
                     <img class="item-img" src="images/men-2.png" alt="product">
                     <div class="text-box">
                         <h3 class="item-desc">ELLERY X M'O CAPSULE</h3>
