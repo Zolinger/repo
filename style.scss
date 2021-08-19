@@ -5,6 +5,7 @@
 }
 $pink: #F16D7F;
 $black: #000000;
+
 @mixin p-text {
     font-size: 14px;
     line-height: 17px;
@@ -18,8 +19,8 @@ $black: #000000;
     justify-content: space-between;
 }
 @mixin block-offer {
-    width: 360px;
-    height: 260px;
+    width: 30,5%;
+    position: relative;
 }
 
 .container  {
@@ -29,8 +30,9 @@ $black: #000000;
 .heading {
     background: #222222;
     height: 75px;
-    @include flexible;
-    padding: 0px 400px
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 21%;
 }
 .left {
     @include flexible;
@@ -89,8 +91,7 @@ $black: #000000;
     text-decoration: none;
 }
 .main-menu-way:hover {
-    font-weight: 800;
-    transform: scale(1.1);
+    font-weight: 900;
 }
 .menu-way {
     @include p-text;
@@ -100,8 +101,7 @@ $black: #000000;
     text-decoration: none;
 }
 .menu-way:hover {
-    font-weight: 800;
-    transform: scale(1.1);
+    font-weight: 900;
 }
 .tap_2 {
     margin-right: 33px;
@@ -110,21 +110,47 @@ $black: #000000;
     background-image: url(images/title_back.png);
     height: 700px;
     display: flex;
+    padding: 0 15%;
 }
 .title_men {
-    height: 700px;
-    margin-left: 200px;
-    margin-right: 100px;
+    height: 100%;
+    
 }
 .title_right {
     align-self: center;
     display: flex;
-    height: 92px;
+    max-height: 92px;
+    -webkit-animation: roll-in-right 0.6s ease-out both;
+	        animation: roll-in-right 0.6s ease-out both;
 }
+@-webkit-keyframes roll-in-right {
+    0% {
+         -webkit-transform: translateX(800px) rotate(540deg);
+            transform: translateX(800px) rotate(540deg);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0) rotate(0deg);
+                  transform: translateX(0) rotate(0deg);
+          opacity: 1;
+        }
+      }
+      @keyframes roll-in-right {
+        0% {
+          -webkit-transform: translateX(800px) rotate(540deg);
+                  transform: translateX(800px) rotate(540deg);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0) rotate(0deg);
+                  transform: translateX(0) rotate(0deg);
+          opacity: 1;
+        }
+      }
 .stripe {
     background-color: $pink;
     margin-right: 10px;
-    width: 10px;
+    width: 12px;
 }
 .big {
     font-weight: 900;
@@ -148,43 +174,43 @@ $black: #000000;
 }
 .women {
     @include block-offer;
-    background-image: url(images/for_women.jpg);
 }
 .men {
     @include block-offer;
-    background-image: url(images/for_men.jpg);
 }
 .kids {
     @include block-offer;
-    background-image: url(images/for_kids.jpg);
 }
 .acces {
-    width: 1140px;
-    height: 180px;
-    background-image: url(images/accesories.jpg);
+
+    position: relative;
 }
 .text_block {
-    display: flex;
+    display: inline-block;
+    position: absolute;
     flex-direction: column;
     text-align: center;
     @include button-text;
     font-weight: 400;
-    padding: 111px 78px;
     color: #FFFFFF;
     text-decoration: none;
+    top: 110px;
+    left: 85px;
 }
 .text_block:hover {
     transform: scale(1.2);
 }
 .text_acces {
-    display: flex;
+    display: inline-block;
+    position: absolute;
     flex-direction: column;
     font-weight: 400;
-    padding: 71px 472px;
     @include button-text;
     color: #FFFFFF;
     text-align: center;
     text-decoration: none;
+    top: 70px;
+    left: 455px;
 }
 .text_acces:hover {
     transform: scale(1.2);
@@ -324,12 +350,18 @@ $black: #000000;
     left: 44%;
     position: absolute;
 }
+.miniature:hover {
+    transform: scale(1.5);
+}
 .spec_head {
     text-align: center;
     font-size: 19.96px;
     line-height: 24px;
     color: #FBFBFB;
     padding-top: 58px;
+}
+.spec_head:hover {
+    transform: scaleX(1.3);
 }
 .spec_text {
     font-weight: 300;
@@ -339,11 +371,15 @@ $black: #000000;
     width: 340px;
     padding-top: 16px;
 }
+.spec_text:hover {
+    transform: scaleX(1.3);
+}
 .footer {
     background-image: url(images/footer.jpg);
     background-size: 100%;
     height: 448px;
 }
+
 .feedback {
     @include flexible;
 }
@@ -410,6 +446,7 @@ $black: #000000;
     box-sizing: border-box;
     border: 1px solid $pink;
     transition: 0.3s;
+    font-weight: 900;
 }
 .network {
     @include flexible;
@@ -508,15 +545,17 @@ $black: #000000;
     display: none;
 }
 .head-filter {
+    display: flex;
+    align-items:center;
     height: 37px;
+    padding-left: 5px;
     color: $pink;
+    margin-top: 5px;
+    border-left: 5px solid $pink;
     border-bottom: 1px solid #cccc;
-    list-style-image: url(images/filter-stripe.png);
-    
 }
-
 .head-filter:hover {
-    transform: scale(1.1);
+    font-weight: 900;
 }
 .right-menu {
     margin-left: 100px;
@@ -698,6 +737,7 @@ $black: #000000;
 }
 .card-add-box:hover {
     transform: scale(1.2);
+    font-weight: 900;
 }
 .card-add {
     border: 1px solid $pink;
@@ -750,7 +790,7 @@ $black: #000000;
     display: block;
 }
 .cat-menu-way:hover {
-    transform: scale(1.1);
+    font-weight: 900;
 }
 .accordion-item-header {
     flex-direction: column;
@@ -981,4 +1021,29 @@ $black: #000000;
 .yan-ul li {
     list-style-image: url(images/galochka.png);
     padding-left: 23px;
+}
+@media screen and (min-width:376px) and (max-width:768px) {
+    .container {
+        width: 768px;
+        padding: 0px 2%;
+    }
+    .heading {
+        padding: 0px 3%;
+    }
+    .title {
+        height: 368px;
+        padding: 0px 0px;
+    }
+    .stripe {
+        width: 8px;
+    }
+    .big {
+        font-size: 28px;
+    }
+    .not_big {
+        font-size: 15px;
+    }
+    .pink {
+        font-size: 15px;
+    }
 }
