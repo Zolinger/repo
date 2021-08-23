@@ -18,7 +18,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 21%;
 }
 
 .left {
@@ -30,6 +29,7 @@
           justify-content: space-between;
   -ms-flex-item-align: center;
       align-self: center;
+  padding-left: 20px;
 }
 
 .right {
@@ -41,6 +41,7 @@
           justify-content: space-between;
   -ms-flex-item-align: center;
       align-self: center;
+  padding-right: 20px;
 }
 
 .brand_logo {
@@ -140,7 +141,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 15%;
 }
 
 .title_men {
@@ -206,6 +206,12 @@
   font-weight: 700;
 }
 
+.pink-block {
+  font-size: 24px;
+  color: #F16D7F;
+  font-weight: 700;
+}
+
 .main-block {
   margin: 65px auto;
 }
@@ -221,26 +227,33 @@
 }
 
 .women {
-  width: 30,5%;
   position: relative;
 }
 
 .men {
-  width: 30,5%;
   position: relative;
 }
 
 .kids {
-  width: 30,5%;
   position: relative;
+}
+
+.img-block {
+  width: 360px;
+  height: auto;
 }
 
 .acces {
   position: relative;
 }
 
+.acces-block {
+  max-width: 100%;
+  height: auto;
+}
+
 .text_block {
-  display: inline-block;
+  display: block;
   position: absolute;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -250,10 +263,14 @@
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
+  font-weight: 400;
   color: #FFFFFF;
   text-decoration: none;
-  top: 110px;
-  left: 85px;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .text_block:hover {
@@ -271,11 +288,15 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  font-weight: 400;
   color: #FFFFFF;
   text-align: center;
   text-decoration: none;
-  top: 70px;
-  left: 455px;
+  top: 40%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .text_acces:hover {
@@ -336,6 +357,7 @@
 .item-price {
   font-size: 16px;
   line-height: 19px;
+  font-weight: 400;
   color: #F16D7F;
   margin-top: 18px;
 }
@@ -412,6 +434,7 @@
   text-align: center;
   font-size: 16px;
   line-height: 19px;
+  font-weight: 400;
   color: #F16D7F;
   text-decoration: none;
   padding: 14px 38px;
@@ -451,8 +474,7 @@
       -ms-grid-row-align: center;
       align-self: center;
   position: relative;
-  margin-left: 230px;
-  height: 110px;
+  height: 133px;
 }
 
 .spec_item2 {
@@ -462,7 +484,7 @@
   position: relative;
   margin-left: 30px;
   margin-right: 30px;
-  height: 110px;
+  height: 133px;
 }
 
 .spec_item3 {
@@ -470,8 +492,7 @@
       -ms-grid-row-align: center;
       align-self: center;
   position: relative;
-  margin-right: 230px;
-  height: 110px;
+  height: 133px;
 }
 
 .miniature {
@@ -514,7 +535,6 @@
 
 .footer {
   background-image: url(images/footer.jpg);
-  background-size: 100%;
   height: 448px;
 }
 
@@ -529,8 +549,8 @@
 
 .subscribe {
   position: relative;
-  margin-top: 150px;
-  margin-right: 230px;
+  margin-top: 115px;
+  margin-right: 100px;
 }
 
 .feedback-face {
@@ -539,7 +559,7 @@
       -ms-grid-row-align: center;
       align-self: center;
   margin-top: 106px;
-  margin-left: 325px;
+  margin-left: 250px;
 }
 
 .feedback-text {
@@ -550,7 +570,7 @@
   line-height: 24px;
   width: 360px;
   margin-top: 30px;
-  margin-left: 208px;
+  margin-left: 120px;
 }
 
 .sub-head {
@@ -615,7 +635,7 @@
           justify-content: space-between;
   -ms-flex-item-align: center;
       align-self: center;
-  margin-right: 230px;
+  padding-right: 230px;
 }
 
 .fa {
@@ -644,6 +664,7 @@
 .alr {
   font-size: 16px;
   line-height: 19px;
+  font-weight: 400;
   color: #FBFBFB;
   padding-left: 235px;
   padding-top: 30px;
@@ -655,8 +676,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
   -webkit-box-align: center;
@@ -671,7 +693,6 @@
 }
 
 .breadcrumb {
-  padding: 10px 16px;
   list-style: none;
 }
 
@@ -712,6 +733,7 @@
 .left-menu {
   width: 360px;
   position: absolute;
+  padding-left: 10px;
 }
 
 .filter-cat {
@@ -1000,6 +1022,7 @@
   border: 1px solid #F16D7F;
   font-size: 16px;
   line-height: 19px;
+  font-weight: 400;
   color: #F16D7F;
   text-decoration: none;
   margin: 0 auto;
@@ -1201,6 +1224,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
+  font-weight: 400;
   color: #222222;
 }
 
@@ -1250,6 +1274,7 @@
   padding-left: 153px;
   font-size: 16px;
   line-height: 19px;
+  font-weight: 400;
   color: #4A4A4A;
 }
 
@@ -1258,6 +1283,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
+  font-weight: 400;
   color: #FFFFFF;
   margin: 39px 42px 22px;
   padding: 16px 40px;
@@ -1296,6 +1322,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
+  font-weight: 400;
   color: #000000;
 }
 
@@ -1369,7 +1396,7 @@
 }
 
 .yan-text {
-  width: 650px;
+  width: 500px;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
@@ -1389,7 +1416,7 @@
 
 @media screen and (min-width: 376px) and (max-width: 768px) {
   .container {
-    width: 768px;
+    width: 735px;
     padding: 0px 2%;
   }
   .heading {
@@ -1403,13 +1430,159 @@
     width: 8px;
   }
   .big {
-    font-size: 28px;
+    font-size: 44px;
   }
   .not_big {
-    font-size: 15px;
+    font-size: 24px;
   }
   .pink {
-    font-size: 15px;
+    font-size: 24px;
+  }
+  .block {
+    margin-bottom: 19px;
+  }
+  .img-block {
+    width: 232px;
+  }
+  .spec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 610px;
+  }
+  .miniature {
+    left: 42%;
+  }
+  .spec_item1 {
+    margin-top: 48px;
+    margin-left: 0px;
+  }
+  .spec_item2 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .spec_item3 {
+    margin-bottom: 48px;
+    margin-right: 0px;
+  }
+  .footer {
+    height: 614px;
+    background-position: 33%;
+    background-size: cover;
+  }
+  .feedback {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feedback-face {
+    margin-top: 48px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: 320px;
+  }
+  .feedback-text {
+    margin-left: 185px;
+  }
+  .subscribe {
+    margin-top: 48px;
+    margin-bottom: 140px;
+    margin-right: 0px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .alr {
+    padding-left: 32px;
+  }
+  .network {
+    padding-right: 32px;
+  }
+  .title-catalog {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 60px 16px;
+  }
+  .menu-catalog {
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+  .pag {
+    margin-left: 265px;
+    margin-bottom: 63px;
+  }
+  .card {
+    margin-top: 0px;
+  }
+  .family {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 128px;
+  }
+  .dad {
+    margin-bottom: 0px;
+    margin-right: 0px;
+  }
+  .cart-item1 {
+    width: 735px;
+  }
+  .cart-item2 {
+    width: 735px;
+  }
+  .cart-button {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .bbb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .aaa {
+    width: 375px;
+  }
+  .all-input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pole-vvoda {
+    width: 360px;
+  }
+  .buy {
+    height: 250px;
+    margin-top: 39px;
+    margin-left: 15px;
+  }
+  .mom_text1 {
+    padding-right: 34px;
+  }
+  .mom_text2 {
+    padding-right: 34px;
+  }
+  .mom_button {
+    width: 190px;
+    margin-left: 40px;
+  }
+  .yan {
+    margin-left: 22px;
+  }
+  .yan-head {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .yan-text {
+    width: 315px;
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 /*# sourceMappingURL=style.css.map */
